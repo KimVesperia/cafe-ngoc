@@ -1,0 +1,610 @@
+<!-- DOCTYPE is used to inform the visitor's browser that the document is an HTML doc -->
+<!DOCTYPE html>
+<!-- This information helps search engines return language specific results and helps screenreaders -->
+<html lang="en">
+    <head>
+        <!-- charset attribute specifies the character encoding for the HTML document -->
+        <!-- UTF-8: For the standard ASCII (0-127) characters -->
+        <meta charset="utf-8">
+        <!-- dont zoom out on small screens -->
+        <!-- https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- seo meta description-->
+        <meta name="description" content="Café Ngoc is a premium coffee delivery service with the mission to bring affordable and quality beverages to as many people as possible.">
+
+        <!-- makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing. 
+        https://necolas.github.io/normalize.css/ -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <!-- http://www.responsivegridsystem.com/ -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <!-- https://ionicons.com/v2/ -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <!-- animate css https://animate.style/ -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.min.css">
+        <!-- custom css file -->
+        <link rel="stylesheet" type="text/css" href="resources/css/style.min.css">
+        <!-- custom queries css file -->
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.min.css">
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+        <title>Café Ngoc</title>
+
+        <!-- favicon -->
+        <!-- https://realfavicongenerator.net/ -->
+        <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+
+
+    </head>
+    <body>
+        <!-- logo, nav, hero image, buttons. Search engine will recognize this as a header -->
+        <header class="js--section-header">
+            <!--  The nav element is intended only for major block of navigation links. -->
+            <nav>
+                <!-- centralized div -->
+                <div class="row">
+                    <!-- logo -->
+                    <a class="js--header-reload" href="#"><img src="resources/img/white-logo.png" alt="Cafe Ngoc logo" class="logo"></a>
+                    <!-- black logo -->
+                    <a class="js--scroll-to-header" href="#"><img src="resources/img/black-logo.png" alt="Cafe Ngoc logo" class="logo-black"></a>
+                    <!-- scroll to top button -->
+                    <a class="js--scroll-to-header2" href="#"><div class="ion-chevron-up scroll-to-top js--wp-5"></div></a>
+
+                    <!-- hamburger menu -->
+                    <!-- no a href = no pointer so add manually cursor -->
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon"></i></a>
+
+                    <!-- unordered list (bullets no order by nr) -->
+                    <ul class="main-nav js--main-nav">
+                        <!-- hash(#) + id for scroll jquery plugin -->
+                        <li><a href="#features">Coffee delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
+                    </ul>
+
+                </div>
+
+            </nav>
+            <!-- text box floats over the hero image -->
+            <div class="hero-text-box">
+                <h1>Take a little<br>coffee break</h1>
+                <!-- class btn for overlapping codes, the rest for specific -->
+                <!-- DRY - Don't repeat yourself -->
+                <a class="btn btn-full js--scroll-to-plan" href="#">I’m thirsty</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
+            </div>
+
+        </header>
+
+        <!-- The <section> tag defines a section in a document. -->
+        <!-- id for scroll jquery plugin -->
+        <section class="section-features js--section-features" id="features">
+            <!-- centralized component -->
+            <div class="row">
+                <!-- html longer dash entity -->
+                <!-- https://css-tricks.com/snippets/html/glyphs/ -->
+                <h2>Get energy fast &mdash; not energy drink</h2>
+                <!-- long copyrighted text -->
+                <p class="long-copy">
+                    Hello, we’re Café Ngoc, your new premium coffee delivery service. People are always busy nowadays, with either no time to brew or get coffee. So let Café Ngoc take care of that! We offer a <strong>premium coffee delivery service</strong>, any time, any place!
+                </p>
+            </div>
+            <!-- centralized component -->
+            <!-- fade this content in with js wp -->
+            <div class="row js--wp-1">
+                <!-- responsive grid system, 4 columns -->
+                <!-- dont change the classes, add another class if need -->
+                <div class="col span-1-of-4 box">
+                    <!-- The <i> and <span> elements are widely used to add icons. -->
+                    <!-- https://ionicons.com/v2/ -->
+                    <!-- added class icon-big, dont change existing -->
+                    <i class="ion-ios-infinite-outline icon-big"></i>
+                    <h3>24/7 service</h3>
+                    <p>
+                        Never worry again! We really mean that. Our subscription plans include 24/7 service. You can also choose to order more flexibly if that's your style.
+                    </p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-stopwatch-outline icon-big"></i>
+                    <h3>Ready in 20 minutes</h3>
+                    <p>
+                        You're only twenty minutes away from your delicious and hot beverages delivered right to your home. We work with the best brewers in each town to ensure that you're 100% happy.
+                    </p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-star-outline icon-big"></i>
+                    <h3>100% high quality</h3>
+                    <p>
+                        All our coffee is made with high quality specialty graded coffee beans, that are freshly roasted. Using specialty coffee means guaranteeing that the flavour is of a high quality!
+                    </p>
+                </div>
+
+                <div class="col span-1-of-4 box">
+                    <i class="ion-ios-cart-outline icon-big"></i>
+                    <h3>Order anything</h3>
+                    <p>
+                        We don't limit your creativity, we can customize your coffee to whatever you feel like. You can also choose from our menu containing over 100 delicious beverages. It's up to you!
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="section-drinks">
+            <!-- clear float after ul cuz li uses float -->
+            <ul class="drinks-showcase clearfix">
+                <li>
+                    <!-- The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings -->
+                    <figure class="drink-photo">
+                        <img src="resources/img/1.jpg" alt="Flower coffee design">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="drink-photo">
+                        <img src="resources/img/2.jpg" alt="Lovers coffee combo">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="drink-photo">
+                        <img src="resources/img/3.jpg" alt="Freshly brewed coffee">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="drink-photo">
+                        <img src="resources/img/4.jpg" alt="Elegant coffee photo">
+                    </figure>
+                </li>
+            </ul>
+
+            <ul class="drinks-showcase clearfix">
+                <li>
+                    <figure class="drink-photo">
+                        <img src="resources/img/5.jpg" alt="Coffee milk and choco powder">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="drink-photo">
+                        <img src="resources/img/6.jpg" alt="Coffee with nuts">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="drink-photo">
+                        <img src="resources/img/7.jpg" alt="Classic black coffee">
+                    </figure>
+                </li>
+                <li>
+                    <figure class="drink-photo">
+                        <img src="resources/img/8.jpg" alt="Creative coffee">
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="section-steps" id="works">
+            <div class="row">
+                <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 steps-box">
+                    <!-- fade the img with js wp -->
+                    <img src="resources/img/app-iPhone.png" alt="Cafe Ngoc app on iPhone" class="app-screen js--wp-2">
+                </div>
+                <div class="col span-1-of-2 steps-box">
+                    <div class="works-step">
+                        <div>1</div>
+                        <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>2</div>
+                        <p>Order your delicious coffee using our mobile app or website. Or you can even call us!</p>
+                    </div>
+                    <div class="works-step">
+                        <div>3</div>
+                        <p>Enjoy your coffee after less than 20 minutes. See you the next time!</p>
+                    </div>
+
+                    <!-- target blank to open a new tab -->
+                    <a href="https://www.apple.com/ios/app-store/" target="_blank" class="btn-app"><img src="resources/img/download-app.svg" alt="App Store Button"></a>
+                    <a href="https://play.google.com/store?hl=en" target="_blank" class="btn-app"><img src="resources/img/download-app-android.png" alt="Play Store Button"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cities" id="cities">
+            <div class="row">
+                <h2>We're currently in these cities</h2>
+            </div>
+            <!-- fade the images in with js wp -->
+            <div class="row js--wp-3">
+                <div class="col span-1-of-4 box">
+                    <figure class="city-photo">
+                        <img src="resources/img/hanoi.jpg" alt="Hanoi">
+                    </figure>
+                    <h3>Hanoi</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1100+ energized
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        120+ top brewers
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="https://twitter.com/" target="_blank">@cfngoc_hn</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <figure class="city-photo">
+                        <img src="resources/img/danang.jpg" alt="Da Nang">
+                    </figure>
+                    <h3>Da Nang</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        4600+ energized
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        380+ top brewers
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="https://twitter.com/" target="_blank">@cfngoc_dn</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <figure class="city-photo">
+                        <img src="resources/img/hochiminh.jpg" alt="Ho Chi Minh">
+                    </figure>
+                    <h3>Ho Chi Minh</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        1900+ energized
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        110+ top brewers
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="https://twitter.com/" target="_blank">@cfngoc_sg</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-4 box">
+                    <figure class="city-photo">
+                        <img src="resources/img/amsterdam.jpg" alt="Amsterdam">
+                    </figure>
+                    <h3>Amsterdam</h3>
+                    <div class="city-feature">
+                        <i class="ion-ios-person icon-small"></i>
+                        3500+ energized
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-ios-star icon-small"></i>
+                        250+ top brewers
+                    </div>
+                    <div class="city-feature">
+                        <i class="ion-social-twitter icon-small"></i>
+                        <a href="https://twitter.com/" target="_blank">@cfngoc_am</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-testimonials">
+            <div class="row">
+                <h2>Our customers can't live without us</h2>
+                <!-- https://randomuser.me/ -->
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <!-- The <blockquote> tag specifies a section that is quoted from another source. -->
+                    <blockquote>
+                        Café Ngoc is just awesome! I just launched a startup which leaves me with no time to get coffee, so Café Ngoc is a life-saver. Now that I got used to it, I couldn't live without my daily coffee!
+                        <!-- The <cite> tag defines the title of a creative work -->
+                        <cite><img src="resources/img/customer-1.jpg" alt="Customer 1 photo">Kevin Lawrence</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <!-- The <blockquote> tag specifies a section that is quoted from another source. -->
+                    <blockquote>
+                        Inexpensive, quick and great-tasting coffee, delivered right to my workplace. We have lots of food delivery here in Da Nang, but no one ever delivers coffee. Me and my colleague are so in love!
+                        <!-- The <cite> tag defines the title of a creative work -->
+                        <cite><img src="resources/img/customer-2.jpg" alt="Customer 2 photo">Melissa Robertson</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <!-- The <blockquote> tag specifies a section that is quoted from another source. -->
+                    <blockquote>
+                        I was looking for a quick cup of coffee in Amsterdam. I tried a lot of them and ended up with Café Ngoc. Best coffee, and delivery service in Amsterdam. Keep up the great work!
+                        <!-- The <cite> tag defines the title of a creative work -->
+                        <cite><img src="resources/img/customer-3.jpg" alt="Customer 3 photo">Arnold Bishop</cite>
+                    </blockquote>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section-plans js--section-plans" id="plans">
+            <div class="row">
+                <h2>Have a cup anywhere and anytime</h2>
+            </div>
+            <div class="row">
+                <!-- col 1 -->
+                <div class="col span-1-of-3">
+                    <!-- new div class to add width and color -->
+                    <!-- animate the box with js wp -->
+                    <div class="plan-box js--wp-4">
+                        <div>
+                            <h3>Premium</h3>
+                            <!-- use span to style a part of the text differently -->
+                            <p class="plan-price">$99 <span>/ month</span></p>
+                            <p class="plan-price-drink">That’s only $0.99 per cup</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>3 cups every day</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Create your own cup</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-full">Sign up now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- col 2 -->
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Pro</h3>
+                            <p class="plan-price">$45 <span>/ month</span></p>
+                            <p class="plan-price-drink">That’s only $1.50 per cup</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>3 cups every 10 days</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order 24/7</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Create your own cup</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign up now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- col 3 -->
+                <div class="col span-1-of-3">
+                    <div class="plan-box">
+                        <div>
+                            <h3>Starter</h3>
+                            <p class="plan-price">$2 <span>/ cup</span></p>
+                            <!-- empty space, cuz no content -->
+                            <p class="plan-price-drink">&nbsp;</p>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>1 cup</li>
+                                <li><i class="ion-ios-checkmark-empty icon-small"></i>Order from 8 am to 12 pm</li>
+                                <li><i class="ion-ios-close-empty icon-small"></i>Create your own cup</li>
+                                <li><i class="ion-ios-close-empty icon-small"></i>Free delivery</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-ghost">Sign up now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
+                <!-- The <form> element represents a document section containing interactive controls for submitting information. -->
+                <!-- post: The POST method; form data sent as the request body. -->
+                <!-- The action attribute defines the action to be performed when the form is submitted. Ie. script -->
+                <!-- xampp action=resources/php/send.php / target=frame -->
+                <form target="#" method="post" action="#" class="contact-form">
+                    <!-- row 1 -->
+                    <div class="row">
+                        <!-- smaller column 33% -->
+                        <div class="col span-1-of-3">
+                            <!-- The <label> tag defines a label for many form elements. -->
+                            <!-- The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. Ie. screenreaders -->
+                            <label for="name">Name</label>
+                        </div>
+                        <!-- bigger column 66% -->
+                        <div class="col span-2-of-3">
+                            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+                            <!-- The <input> tag specifies an input field where the user can enter data. -->
+                            <!-- Default attribute type = text -->
+                            <!-- name Specifies the name of the <input> element also php var -->
+                            <!-- Use ID to bind it with the label -->
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+
+                    <!-- row 2 -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+
+                    <!-- row 3 -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you find us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select -->
+                            <!-- The HTML <select> element represents a control that provides a menu of options -->
+                            <!-- value = the data that has been submitted -->
+                            <select name="find-us" id="find-us">
+                                <option value="friends" selected>Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- row 4 -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="news">Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="news" id="news" checked> Yes, please.
+                        </div>
+                    </div>
+
+                    <!-- row 5 -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Send us a message</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- form btn -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <!-- empty/invisible left column -->
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/submit -->
+                            <!-- <input> elements of type submit are rendered as buttons. -->
+                            <!-- An <input type="submit"> element's value attribute contains a DOMString which is displayed as the button's label. Buttons do not have a true value otherwise. -->
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+
+                    <!-- iframe for success box -->
+                    <!-- <div class="row"> -->
+                        <!-- <div class="col span-1-of-3"> -->
+                            <!-- empty/invisible left column -->
+                            <!-- <label>&nbsp;</label> -->
+                        <!-- </div> -->
+                        <!-- <div class="col span-2-of-3"> -->
+                            
+                            <!-- <iframe name="frame"> -->
+                            <!-- </iframe> -->
+
+                        <!-- </div> -->
+                    <!-- </div> -->
+
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <!-- the entity for the copyright symbol (©) is &copy; -->
+                <p>
+                    Copyright &copy; 2020 by Kim Phung. All rights reserved.
+                </p>
+            </div>
+
+        </footer>
+
+        <!-- load above first before script -->
+
+        <!-- Firebase Hosting -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.16.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.16.0/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyBiP0GgL3LOM9OvevhFZYDCxn26zbL2lLw",
+                authDomain: "cafe-ngoc.firebaseapp.com",
+                databaseURL: "https://cafe-ngoc.firebaseio.com",
+                projectId: "cafe-ngoc",
+                storageBucket: "cafe-ngoc.appspot.com",
+                messagingSenderId: "719435468130",
+                appId: "1:719435468130:web:a76a97fdc46e0ac4ddb03b",
+                measurementId: "G-5J58G4B6RE"
+            };
+            firebase.analytics();
+        </script>
+
+        <!-- html5 and css3 for older browsers fix -->
+        <!-- https://www.jsdelivr.com/ -->
+
+        <!-- jQuery - google cdn -->
+        <!-- https://developers.google.com/speed/libraries#jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- min/max-width media query polyfill -->
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+
+        <!-- The HTML5 Shiv enables use of HTML5 sectioning elements in legacy browsers -->
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        
+        <!-- selectivizr is a JavaScript utility that emulates CSS3 pseudo-classes - IE 6-8 -->
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+
+        <!-- sticky jquery plugin -->
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+
+        <!-- custom js -->
+        <!-- own script is the last -->
+        <script src="resources/js/script.min.js"></script>
+
+    </body>
+
+
+</html>
