@@ -794,6 +794,11 @@ footer {
     margin-right: 0px;
 }
 
+/* last child and element inside */
+.footer-nav li:last-child > a:last-child {
+    color: #fff;
+}
+
 /* custom <a> footer links */
 .footer-nav li a:link,
 .footer-nav li a:visited,
