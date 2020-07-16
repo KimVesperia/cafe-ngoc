@@ -415,7 +415,7 @@
 
         </section>
 
-        <section class="section-form">
+        <section class="section-form" id="form">
             <div class="row">
                 <h2>We're happy to hear from you</h2>
             </div>
@@ -424,10 +424,23 @@
                 <!-- The <form> element represents a document section containing interactive controls for submitting information. -->
                 <!-- post: The POST method; form data sent as the request body. -->
                 <!-- The action attribute defines the action to be performed when the form is submitted. Ie. script -->
-                <!-- xampp action=resources/php/send.php / target=frame -->
+                <!-- xampp action=send.php / target=frame -->
                 <form target="#" method="post" action="#" class="contact-form">
+
+                    <!-- row php warning -->
+                    <!-- <div class="row">
+                        <div class="form-messages success">
+                            Thank you! Your message has been sent.
+                        </div>
+
+                        <!-- <div class="form-messages error">
+                            Oops! Something went wrong. Please try again!
+                        </div> -->
+                    <!-- </div> -->
+
                     <!-- row 1 -->
                     <div class="row">
+                        
                         <!-- smaller column 33% -->
                         <div class="col span-1-of-3">
                             <!-- The <label> tag defines a label for many form elements. -->
@@ -508,18 +521,17 @@
                     </div>
 
                     <!-- iframe for success box -->
-                    <!-- <div class="row"> -->
-                        <!-- <div class="col span-1-of-3"> -->
+                    <div class="row">
+                        <div class="col span-1-of-3">
                             <!-- empty/invisible left column -->
-                            <!-- <label>&nbsp;</label> -->
-                        <!-- </div> -->
-                        <!-- <div class="col span-2-of-3"> -->
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
                             
-                            <!-- <iframe name="frame"> -->
-                            <!-- </iframe> -->
+                            <small><i>* Firebase Hosting cannot execute PHP scripts, therefore this form is purely made to show the HTML and CSS. *</i></small>
 
-                        <!-- </div> -->
-                    <!-- </div> -->
+                        </div>
+                    </div>
 
                 </form>
             </div>

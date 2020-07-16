@@ -752,10 +752,23 @@ input[type=checkbox] {
     outline: none;
 }
 
-/* Iframe success box */
-iframe {
-    border: none;
-    height: auto;
+/* form feedback */
+.form-messages {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+.success {
+    background-color: rgba(41, 168, 71, 0.8);
+}
+
+.error {
+    background-color: rgba(220, 53, 70, 0.8);
 }
 
 /* ------------------------------------------------------ */
