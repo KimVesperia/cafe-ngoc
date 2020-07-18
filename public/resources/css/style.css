@@ -460,6 +460,8 @@ header {
     overflow: hidden;
     /* black background to fill the container for the dark opacity */
     background-color: #000;
+    /* animation fix */
+    backface-visibility: hidden;
 }
 
 .drink-photo img {
@@ -587,6 +589,8 @@ header {
     background-color: #fff;
     margin: 0;
     overflow: hidden;
+    /* animation fix */
+    backface-visibility: hidden;
 }
 
 .city-feature {
