@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site" : "cafe-ngoc",
+	"site": "cafe-ngoc-kimv",
     "public": "public",
     "ignore": [
       "firebase.json",
