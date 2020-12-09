@@ -900,3 +900,24 @@ footer p {
 .js--wp-3.animate__animated {
     opacity: 1;
 }
+
+/* ------------------------------------------------------ */
+/* COMPONENTS */
+/* ------------------------------------------------------ */
+/* GITHUB */
+.github {
+    /* display: none; */
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    width: 2rem;
+    top: 50%;
+}
+
+.github__link {
+    border: none !important;
+}
+
+.github__logo {
+    width: 100%;
+}
